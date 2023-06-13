@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dior</title>
+  <style>
+    
+  @font-face{font-family: title; src: url(./font/Nicolas\ Cochin\ EF\ Regular.ttf);}
+  body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.fading {
+  font: 900 2rem sans-serif;
+  animation-name: fade-in;
+  animation-duration: 7s;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1{display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+margin: 0;
+padding: 0;
+}
+
+a{font-family: title;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 80px;
+  line-height: 100vh;}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="fading">
+    <h1>
+    <a href="./main.html">Dior</a>
+    </h1>
+</div>
+</body>
+</html>
