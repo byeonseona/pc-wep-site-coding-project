@@ -60,6 +60,9 @@ header nav ul li a{width: 200px;height: 50px;text-align: center;line-height: 50p
 .show .back-to-position.delay-4{transition-delay: 1.5s;}
 .show .back-to-position.delay-5{transition-delay: 1.8s;}
 .show .back-to-position.delay-6{transition-delay: 2.0s;}
+.show .back-to-position.delay-7{transition-delay: 2.5s;}
+
+
 
 
 /* 그리스 디올 */
@@ -71,21 +74,23 @@ header nav ul li a{width: 200px;height: 50px;text-align: center;line-height: 50p
 .grisdior-text2{position: absolute;top: 338px;left: 1419px;}
 
 /* 립글로우1 */
-.ripglow{width: 100%;height: 1005px;position: relative;}
+.ripglow{width: 100%;height: 932px;position: relative;}
 .ripglow-bg{width: 100%;height: 540px;}
 .ripglow-text{position: absolute;top: 40px;left: 39px;}
-.ripglow-jisoo{position: absolute;left:619px;top: 250px;}
+.ripglow-jisoo{position: absolute;left:619px;top: 250px;opacity: 0;}
 
-.LIMITED{position: absolute;top: 770px;left:517px;}
-.EDITION{position: absolute;top: 887px;left: 858px;}
+/* 리미티드 에디션 */
+.limited-edition{width: 100%;height: 180px;position: relative;}
+.LIMITED{position: absolute;top:-55px; left:516px;}
+.EDITION{position: absolute;top: 70px;left: 854px;} 
 
 /* 립글로우2 */
-.ripglow-2{width: 100%;height: 644px;position: relative;}
+.ripglow-2{width: 100%;height: 537px;position: relative;}
 .ripglow-2 .inner{display: flex;justify-content: center;}
 .rip1, .rip2, .rip3, .rip1-hover, .rip3-hover, .rip2-hover{position: absolute;}
-.rip1, .rip1-hover{left: 170px;top: 96px;}
-.rip2, .rip2-hover{top: 50px;left: 682px;}
-.rip3, .rip3-hover{left: 1269px;top: 96px;}
+.rip1, .rip1-hover{left: 170px;top: 58px;}
+.rip2, .rip2-hover{left: 682px;top: 12px;}
+.rip3, .rip3-hover{left: 1269px;top: 58px;}
 .rip1-hover, .rip2-hover, .rip3-hover{transition: opacity 0.5s linear;opacity: 0;}
 .rip-img1, .rip-img2, .rip-img3{cursor: pointer;}
 .rip-img1:hover .rip1-hover{opacity: 1;}
@@ -143,7 +148,8 @@ footer h1{margin: auto;position: absolute;left: 888px;}
 .foot-text a{font-family: 'NanumSquareRound'; font-size: 13px; color: #B9AEAE;text-align: center;line-height: 26px;width: 100px;height: 26px;}
 footer address{color: #fff;font-style: normal;font-family: 'NanumSquareRound';font-size: 13px;line-height: 1.6;padding-top: 30px;color: #B9AEAE;position: absolute;left: 431px;top: 219px;width: 1057px;height: 150px;}
 
-.top-btn{width: 60px;height: 60px;border-radius: 100px;border: 1px solid #fff;text-align: center;line-height: 60px;position: fixed;right: 20px;bottom: 30px;font-size: 15px;z-index: 999;display: none;}
+.top-btn{width: 60px;height: 60px;border-radius: 100px;border: 1px solid #fff;text-align: center;line-height: 60px;position: fixed;right: 20px;bottom: 30px;font-size: 15px;z-index: 9;display: none;transition: all 0.4s;}
+.top-btn:hover{background:#fff;color: black;font-weight: bold;}
 
 .hamburger{position: relative;left: 380px;top: 10px}
 
@@ -202,7 +208,7 @@ footer address{color: #fff;font-style: normal;font-family: 'NanumSquareRound';fo
 #overlay {
   position: absolute;
   display: flex;
-  top: 0;
+  top : -937px;
   width: 100%;
   height: 100vh;
   background: #fff;

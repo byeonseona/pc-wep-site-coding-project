@@ -22,7 +22,6 @@ burger.each(function (index) {
 
 var h = 0;
 
-$('#overlay').css('opacity', 0);
 $(burger).on('click', function () {
   if (h == 0) {
     $('#overlay').animate(
