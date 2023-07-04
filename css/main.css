@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+
+body {
+  overflow-x: hidden;
+}
+html {
+  overflow-x :  hidden;
+}
 /* 비디오 영역 */
 header .clip-text-video{
 width: 100%;
@@ -20,9 +27,10 @@ z-index: -2;
 header{width:100%;height: 100vh;}
 .header-in{display: flex; justify-content: space-between;}
 
-header h1 a{width: 150px; height: 54px; margin-top: 20px;position: absolute;left: 30px;}
+header h1 a{width: 80px; height: 30px; margin-top: 30px;position: absolute;left: 30px;}
+header h1 a img{width: 100%;}
 
-header nav{margin-top: 20px;width: 100%;}
+header nav{margin-top: 20px;}
 
 header nav .gnb{display: flex;justify-content: center;}
 header nav .gnb > li > a:after {
@@ -66,7 +74,7 @@ header nav ul li a{width: 200px;height: 50px;text-align: center;line-height: 50p
 
 
 /* 그리스 디올 */
-.grisdior{width: 1920px;height: 1080px;position: relative;}
+.grisdior{width: 1920px;height: 1080px;position: relative;margin: auto;}
 .grisdior .inner{width: 1580px;margin: auto;}
 .grisdior-img{position: absolute;top: 128px;cursor: pointer;}
 
@@ -74,18 +82,18 @@ header nav ul li a{width: 200px;height: 50px;text-align: center;line-height: 50p
 .grisdior-text2{position: absolute;top: 338px;left: 1419px;}
 
 /* 립글로우1 */
-.ripglow{width: 1920px;height: 932px;position: relative;}
+.ripglow{width: 1920px;height: 932px;position: relative;margin: auto;}
 .ripglow-bg{width: 100%;height: 540px;}
 .ripglow-text{position: absolute;top: 40px;left: 39px;}
 .ripglow-jisoo{position: absolute;left:619px;top: 250px;opacity: 0;}
 
 /* 리미티드 에디션 */
-.limited-edition{width: 1920px;height: 180px;position: relative;}
+.limited-edition{width: 1920px;height: 180px;position: relative;margin: auto;}
 .LIMITED{position: absolute;top:-55px; left:516px;}
 .EDITION{position: absolute;top: 70px;left: 854px;} 
 
 /* 립글로우2 */
-.ripglow-2{width: 1920px;height: 537px;position: relative;}
+.ripglow-2{width: 1920px;height: 537px;position: relative;margin: auto;}
 .ripglow-2 .inner{display: flex;justify-content: center;}
 .rip1, .rip2, .rip3, .rip1-hover, .rip3-hover, .rip2-hover{position: absolute;}
 .rip1, .rip1-hover{left: 170px;top: 58px;}
@@ -109,7 +117,7 @@ header nav ul li a{width: 200px;height: 50px;text-align: center;line-height: 50p
 }
 
 /* 컬렉션 */
-.collection{width: 1920px;height: 1080px;position: relative;}
+.collection{width: 1920px;height: 1080px;position: relative;margin: auto;}
 .collection .inner{display: flex;justify-content: space-between;}
 .collectionBox1{position: absolute;top: 79px;left: 170px;cursor: pointer;}
 .collectionBox2{position: absolute;top: 164px;right: 170px;cursor: pointer;}
@@ -123,14 +131,14 @@ header nav ul li a{width: 200px;height: 50px;text-align: center;line-height: 50p
 .collectionBox2:hover img{opacity: 0.7;}
 
 /* 미스디올 */
-.missdior{position: relative;width: 1920px;height: 1080px;background: url(../images/missdior.png)no-repeat center fixed;background-size: cover;}
+.missdior{position: relative;width: 1920px;height: 1080px;background: url(../images/missdior.png)no-repeat center fixed;background-size: cover;margin: auto;}
 .missdior-text1{top: 280px;position: absolute;left: 1130px;}
 .missdior-text2{position: absolute;left: 1247px;top: 444px;}
 .missdior a{position: absolute;top: 524px;left: 1323px;width: 167px;height: 46px;color: black;border: 1px solid black;line-height: 46px;text-align: center;font-size: 21px;font-family: 'NanumSquareRound';border-radius: 5px;transition: all 0.5s;}
 .missdior a:hover{background: black;color: #fff;}
 
 /* 패션쇼 */
-.fashionshow{width: 1920px;height: 1080px;}
+.fashionshow{width: 1920px;height: 1080px;margin: auto;}
 .text-box{width: 100%;height: 360px;}
 .fashionshow-text1{position: relative;top: 74px;left: 502px;}
 .fashionshow-text2{position: relative;top:120px;left: 853px;}
@@ -138,7 +146,7 @@ header nav ul li a{width: 200px;height: 50px;text-align: center;line-height: 50p
 .best div img{position: absolute;top: 10px;width: 463.48px;padding: 0 22.02px;height: 580.6px;}
 
 /* 푸터 */
-footer{width: 1920px;;height: 420px;text-align: center;border-top: 1px solid #2E2B2B;padding-top: 50px;font-family: 'NanumSquareRound';position: relative;}
+footer{width: 1920px;;height: 420px;text-align: center;border-top: 1px solid #2E2B2B;padding-top: 50px;font-family: 'NanumSquareRound';position: relative;margin: auto;}
 footer h1{margin: auto;position: absolute;left: 888px;}
 .foot-text{display: flex;justify-content: center;position: absolute;left: 860px;top: 163px;}
 .foot-text a:hover{text-decoration: underline;}
@@ -151,7 +159,7 @@ footer address{color: #fff;font-style: normal;font-family: 'NanumSquareRound';fo
 .top-btn{width: 60px;height: 60px;border-radius: 100px;border: 1px solid #fff;text-align: center;line-height: 60px;position: fixed;right: 20px;bottom: 30px;font-size: 15px;z-index: 9;display: none;transition: all 0.4s;}
 .top-btn:hover{background:#fff;color: black;font-weight: bold;}
 
-.hamburger{position: relative;left: 380px;top: 10px}
+.hamburger{top: 30px; right: 30px;position: relative;}
 
 
 /* 햄버거 메뉴 */
@@ -218,8 +226,8 @@ footer address{color: #fff;font-style: normal;font-family: 'NanumSquareRound';fo
 
 .overlay-menu{
   position: absolute;
-  left: 200px;
-  top: 140px;}
+  left: 19%;
+  top: 20%;}
 
 #overlay a {
   color: black;
