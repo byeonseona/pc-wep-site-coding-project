@@ -9,10 +9,10 @@ $('header nav > .gnb > li').hover(
 );
 
 /* 햄버거 */
-var burger = $('.menu-trigger');
+let burger = $('.menu-trigger');
 
 burger.each(function (index) {
-  var $this = $(this);
+  let $this = $(this);
 
   $this.on('click', function (e) {
     e.preventDefault();
@@ -20,7 +20,7 @@ burger.each(function (index) {
   });
 });
 
-var h = 0;
+let h = 0;
 
 $(burger).on('click', function () {
   if (h == 0) {
